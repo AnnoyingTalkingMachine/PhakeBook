@@ -1,7 +1,12 @@
 import 'package:fakebook_frontend/constants/Palette.dart';
 import 'package:fakebook_frontend/screens/friend/FriendScreen.dart';
+import 'package:fakebook_frontend/screens/friend/widgets/FriendWidgets.dart';
 import 'package:fakebook_frontend/screens/home/HomeScreen.dart';
 import 'package:flutter/material.dart';
+
+import '../constants/localdata/UserData.dart';
+
+
 
 class NavScreen extends StatefulWidget {
   const NavScreen({Key? key}) : super(key: key);
@@ -18,11 +23,11 @@ class _NavScreenState extends State<NavScreen> with TickerProviderStateMixin{
   ];
   static final List<Widget> _screens = [
     HomeScreen(),
-    // FriendScreen(),
+    FriendScreen(),
     // ProfileScreen(),
     // NotificationScreen(),
     // MenuScreen(),
-    FriendScreen(),
+    // AllFriends(currentUser: currentUser,),
     Center(
       child: Text("It's rainy here"),
     ),

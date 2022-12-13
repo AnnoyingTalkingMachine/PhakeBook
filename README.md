@@ -1,4 +1,4 @@
-# fakebook_frontend
+# PhakeBook
 
 A new Flutter project.
 
